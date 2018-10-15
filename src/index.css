@@ -3,3 +3,41 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.header{
+  grid-area: header;
+  background:#636363;
+  text-align: center;
+  color: aliceblue;
+}
+
+.home{
+  grid-area: home;
+  background-color: white;
+  
+}
+
+.chatBot{
+  grid-area: chatBot;
+  background-color:#f1f1f1;
+  height: calc(100vh - 170px);
+}
+
+.footer{
+  grid-area: footer;
+  text-align: center;
+  background: #ddd;
+  height: 50;
+  width: 100%;
+  padding: 5px;
+  bottom: 0;
+  position: absolute;
+}
+
+.conteudo{
+  display: grid;
+  grid-template-areas: 
+  'header header header header'
+  'home home home chatBot'
+  'footer footer footer footer';
+}
